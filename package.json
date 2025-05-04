@@ -1,6 +1,6 @@
 {
   "name": "com.rossogames.rossoforge-toolbar",
-  "version": "1.0.2",
+  "version": "1.0.0",
   "displayName": "RossoForge-Toolbar",
   "description": "A flexible system for creating customizable toolbar buttons in Unity using ScriptableObjects. Define button actions, icons, and behavior without modifying the code.\n\nPart of the RossoForge package suite.",
   "unity": "2022.0",
