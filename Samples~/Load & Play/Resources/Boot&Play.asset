@@ -12,20 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a9e524324935974dad8eb4120f5cc26, type: 3}
   m_Name: Boot&Play
   m_EditorClassIdentifier: 
-  _toolTip: boot & Play
-  _width: 40
+  _width: 35
   _height: 20
   _buttonCallbacks:
-  - rid: 4521892846035271937
-  - rid: 4521892846035271939
-  <IconName>k__BackingField: d_preAudioAutoPlayOff@2x
+  - rid: 3062605076627456189
+  - rid: 3062605076627456190
+  _toolTip: 
+  <IconName>k__BackingField: preAudioAutoPlayOff@2x
   references:
     version: 2
     RefIds:
-    - rid: 4521892846035271937
-      type: {class: ButtonCallbackOpenScene, ns: RossoForge.Toolbar.Editor, asm: RossoForge.Toolbar.Editor}
+    - rid: 3062605076627456189
+      type: {class: ButtonCallbackOpenScene, ns: RossoForge.Toolbar.Editor.Callbacks, asm: RossoForge.Toolbar.Editor}
       data:
         Scene: {fileID: 102900000, guid: 98305ff470bb14649bb017b920f8f2bc, type: 3}
-    - rid: 4521892846035271939
-      type: {class: ButtonCallbackPlayScene, ns: RossoForge.Toolbar.Editor, asm: RossoForge.Toolbar.Editor}
+    - rid: 3062605076627456190
+      type: {class: ButtonCallbackPlayScene, ns: RossoForge.Toolbar.Editor.Callbacks, asm: RossoForge.Toolbar.Editor}
       data: 

@@ -15,7 +15,7 @@ namespace RossoForge.Toolbar.Editor.Callbacks
         {
             get
             {
-                return 
+                return
                     Scene != null &&
                     !EditorApplication.isPlaying &&
                     !EditorApplication.isPaused &&

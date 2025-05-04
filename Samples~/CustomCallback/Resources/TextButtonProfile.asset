@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 110f09c3ece96e24bb4e2439553b8a25, type: 3}
+  m_Name: TextButtonProfile
+  m_EditorClassIdentifier: 
+  _width: 120
+  _height: 20
+  _buttonCallbacks:
+  - rid: 3062605076627456193
+  _text: Custom callback
+  _fontSize: 12
+  _textColor: {r: 0.42796195, g: 1, b: 0, a: 1}
+  references:
+    version: 2
+    RefIds:
+    - rid: 3062605076627456193
+      type: {class: ButtonCallbackTest, ns: , asm: Assembly-CSharp-Editor}
+      data:
+        _pintText: Hello World!

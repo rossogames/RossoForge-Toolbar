@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: ButtonCenterLeftAlignmentProfile
   m_EditorClassIdentifier: 
   <Buttons>k__BackingField:
-  - {fileID: 11400000, guid: 979f3f37baff39542b3a47090bc69039, type: 2}
+  - {fileID: 11400000, guid: 71476f5df555f374985b6cad93939af0, type: 2}
