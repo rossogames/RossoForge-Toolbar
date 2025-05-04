@@ -1,6 +1,6 @@
 using System;
 
-namespace RossoForge.Toolbar.Editor
+namespace RossoForge.Toolbar.Editor.Callbacks
 {
     [Serializable]
     public abstract class ButtonCallback

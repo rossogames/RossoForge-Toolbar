@@ -1,6 +1,7 @@
+using RossoForge.Toolbar.Editor.Profiles.Buttons;
 using UnityEditor;
 
-namespace RossoForge.Toolbar.Editor
+namespace RossoForge.Toolbar.Editor.Editors
 {
     [CustomEditor(typeof(TextButtonProfile))]
     public class TextButtonProfileEditor : ButtonProfileEditor

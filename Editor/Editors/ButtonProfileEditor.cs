@@ -5,8 +5,9 @@ using System.Linq;
 using System.ComponentModel;
 using System.Reflection;
 using UnityEngine;
+using RossoForge.Toolbar.Editor.Callbacks;
 
-namespace RossoForge.Toolbar.Editor
+namespace RossoForge.Toolbar.Editor.Editors
 {
     public abstract class ButtonProfileEditor : UnityEditor.Editor
     {

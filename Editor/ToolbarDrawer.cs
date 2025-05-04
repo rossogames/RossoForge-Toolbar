@@ -1,3 +1,5 @@
+using RossoForge.Toolbar.Editor.Profiles.Alignments;
+using RossoForge.Toolbar.Editor.Profiles.Buttons;
 using System;
 using System.Collections.Generic;
 using UnityEditor;

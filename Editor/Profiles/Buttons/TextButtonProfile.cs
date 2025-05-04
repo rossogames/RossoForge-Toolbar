@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace RossoForge.Toolbar.Editor
+namespace RossoForge.Toolbar.Editor.Profiles.Buttons
 {
     [CreateAssetMenu(fileName = nameof(TextButtonProfile), menuName = "RossoForge/Toolbar/Buttons/Text Button")]
     public class TextButtonProfile : ButtonProfile

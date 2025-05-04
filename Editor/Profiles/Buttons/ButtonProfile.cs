@@ -1,6 +1,7 @@
+using RossoForge.Toolbar.Editor.Callbacks;
 using UnityEngine;
 
-namespace RossoForge.Toolbar.Editor
+namespace RossoForge.Toolbar.Editor.Profiles.Buttons
 {
     public abstract class ButtonProfile : ScriptableObject
     {
@@ -20,7 +21,7 @@ namespace RossoForge.Toolbar.Editor
 
             foreach (var callback in _buttonCallbacks)
             {
-                if (!callback.Enabled)
+                if (callback != null && !callback.Enabled)
                     return;
             }
 
