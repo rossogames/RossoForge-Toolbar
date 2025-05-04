@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://github.com/rossogames/RossoForge-Toolbar/blob/package-main/logo.png" alt="RossoForge" width="128"/>
+</p>
+
 # Rosso Games
 ## RossoForge - Toolbar
 
