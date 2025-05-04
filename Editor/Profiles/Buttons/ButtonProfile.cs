@@ -5,19 +5,19 @@ namespace RossoForge.Toolbar.Editor
     public abstract class ButtonProfile : ScriptableObject
     {
         [SerializeField]
-        protected string _toolTip;
+        protected int _width;
 
         [SerializeField]
-        protected int _width = 35;
-
-        [SerializeField]
-        protected int _height = 20;
+        protected int _height;
 
         [SerializeReference]
         private ButtonCallback[] _buttonCallbacks;
 
         public void TryDrawButton()
         {
+            if (_buttonCallbacks == null)
+                return;
+
             foreach (var callback in _buttonCallbacks)
             {
                 if (!callback.Enabled)
