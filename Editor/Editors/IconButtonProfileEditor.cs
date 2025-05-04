@@ -63,15 +63,7 @@ namespace RossoForge.Toolbar.Editor.Editors
                     iconContent.tooltip = string.Empty;
                     GUILayout.Label(iconContent, GUILayout.Width(48), GUILayout.Height(48));
                 }
-                else
-                    DrawDefaultIcon();
             }
-            else
-                DrawDefaultIcon();
-        }
-        private void DrawDefaultIcon()
-        {
-            GUILayout.Label("UnityLogo", GUILayout.Width(48), GUILayout.Height(48));
         }
         private void DrawSearchIconButton()
         {

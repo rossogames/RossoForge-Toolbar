@@ -21,9 +21,6 @@ namespace RossoForge.Toolbar.Editor.Profiles.Buttons
 
         protected override bool DrawButton()
         {
-            if (string.IsNullOrWhiteSpace(IconName))
-                IconName = "UnityLogo";
-
             GUIContent buttonContent = EditorGUIUtility.IconContent(IconName);
             buttonContent.tooltip = _toolTip;
 
