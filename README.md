@@ -6,7 +6,7 @@ Each button is defined as a standalone asset, where you can configure its icon, 
 
 With RossoForge Toolbar, you can:
 
-- Quickly add, remove, or reorganize buttons in your editor.
+- Quickly add custom buttons in your editor.
 - Define custom actions for each button through easily extendable scripts.
 - Save time and improve productivity with reusable button definitions.
 
