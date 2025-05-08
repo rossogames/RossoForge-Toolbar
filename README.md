@@ -10,6 +10,8 @@
 **RossoForge - Toolbar** is a flexible system that allows you to create customizable toolbar buttons in the Unity Editor using ScriptableObjects.  
 Each button is defined as a standalone asset, where you can configure its icon, tooltip, and behavior without modifying code.
 
+Watch the tutorial on https://www.youtube.com/watch?v=A7qKsfk7OhU
+#
 With RossoForge Toolbar, you can:
 
 - Quickly add custom buttons in your editor.
@@ -18,3 +20,6 @@ With RossoForge Toolbar, you can:
 
 #
 This package is part of the **RossoForge** suite, designed to streamline and enhance Unity development workflows.
+
+Desarrollado por Agustin Rosso
+https://www.linkedin.com/in/rossoagustin/
