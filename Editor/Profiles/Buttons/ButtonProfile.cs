@@ -1,43 +1,27 @@
 using Rossoforge.Toolbar.Editor.Callbacks;
+using System;
 using UnityEngine;
 
 namespace Rossoforge.Toolbar.Editor.Profiles.Buttons
 {
     public abstract class ButtonProfile : ScriptableObject
     {
-        [SerializeField]
-        protected int _width;
-
-        [SerializeField]
-        protected int _height;
-
         [SerializeReference]
         private ButtonCallback[] _buttonCallbacks;
 
-        public void TryDrawButton()
+        public Action GetCallback()
         {
-            if (_buttonCallbacks == null)
-                return;
-
-            foreach (var callback in _buttonCallbacks)
+            return () =>
             {
-                if (callback != null && !callback.Enabled)
+                if (_buttonCallbacks == null)
                     return;
-            }
 
-            if (!DrawButton())
-                return;
-
-            foreach (var callback in _buttonCallbacks)
-            {
-                if (!callback.Invoke())
-                    break;
-            }
-        }
-
-        protected virtual bool DrawButton()
-        {
-            return false;
+                foreach (var callback in _buttonCallbacks)
+                {
+                    if (!callback.Invoke())
+                        break;
+                }
+            };
         }
     }
 }

@@ -30,7 +30,6 @@ namespace Rossoforge.Toolbar.Editor.Editors
             serializedObject.Update();
 
             DrawToolTipProp();
-            base.DrawSize();
             DrawIconSelector();
             base.DrawAddCallBackButton();
             base.DrawCallbacks();

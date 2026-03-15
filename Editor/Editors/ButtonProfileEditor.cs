@@ -14,32 +14,12 @@ namespace Rossoforge.Toolbar.Editor.Editors
         protected static List<ButtonCallbackInfo> _buttonCallbackInfo;
 
         private List<bool> _foldouts = new List<bool>();
-        private SerializedProperty _widthProp;
-        private SerializedProperty _heightProp;
         private SerializedProperty _buttonCallbacks;
 
         protected virtual void OnEnable()
         {
-            _widthProp = serializedObject.FindProperty("_width");
-            _heightProp = serializedObject.FindProperty("_height");
             _buttonCallbacks = serializedObject.FindProperty("_buttonCallbacks");
-
             LoadCallbackInfo();
-        }
-
-        protected void DrawSize()
-        {
-            EditorGUILayout.BeginHorizontal();
-            EditorGUILayout.PrefixLabel("Size");
-
-            float previousLabelWidth = EditorGUIUtility.labelWidth;
-            EditorGUIUtility.labelWidth = 20;
-
-            _widthProp.intValue = EditorGUILayout.IntField(new GUIContent("W:"), _widthProp.intValue);
-            _heightProp.intValue = EditorGUILayout.IntField(new GUIContent("H:"), _heightProp.intValue);
-
-            EditorGUIUtility.labelWidth = previousLabelWidth;
-            EditorGUILayout.EndHorizontal();
         }
 
         protected void DrawAddCallBackButton()

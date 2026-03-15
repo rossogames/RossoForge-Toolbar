@@ -11,19 +11,6 @@ namespace Rossoforge.Toolbar.Editor.Callbacks
     {
         public SceneAsset Scene;
 
-        public override bool Enabled
-        {
-            get
-            {
-                return
-                    Scene != null &&
-                    !EditorApplication.isPlaying &&
-                    !EditorApplication.isPaused &&
-                    !EditorApplication.isCompiling &&
-                    !EditorApplication.isPlayingOrWillChangePlaymode;
-            }
-        }
-
         public override bool Invoke()
         {
             string scenePath = AssetDatabase.GetAssetPath(Scene);

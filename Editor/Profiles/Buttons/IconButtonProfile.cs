@@ -1,4 +1,5 @@
 ﻿using UnityEditor;
+using UnityEditor.Toolbars;
 using UnityEngine;
 
 namespace Rossoforge.Toolbar.Editor.Profiles.Buttons
@@ -7,28 +8,18 @@ namespace Rossoforge.Toolbar.Editor.Profiles.Buttons
     public class IconButtonProfile : ButtonProfile
     {
         [SerializeField]
-        protected string _toolTip;
+        public string _toolTip;
 
         [field: SerializeField]
         [Tooltip("EditorGUIUtility.IconContent")]
         public string IconName { get; set; }
 
-        public IconButtonProfile()
+        public MainToolbarElement GetToolBarButton()
         {
-            _width = 35;
-            _height = 20;
-        }
+            var icon = EditorGUIUtility.IconContent(IconName).image as Texture2D;
+            var content = new MainToolbarContent(icon, _toolTip);
 
-        protected override bool DrawButton()
-        {
-            GUIContent buttonContent = EditorGUIUtility.IconContent(IconName);
-            buttonContent.tooltip = _toolTip;
-
-            return GUILayout.Button(
-                buttonContent,
-                GUILayout.Width(_width),
-                GUILayout.Height(_height)
-            );
+            return new MainToolbarButton(content, GetCallback());
         }
     }
 }

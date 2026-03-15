@@ -1,9 +1,9 @@
 {
   "name": "com.rossogames.rossoforge-toolbar",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "displayName": "Rossoforge-Toolbar",
   "description": "A flexible system for creating customizable toolbar buttons in Unity using ScriptableObjects. Define button actions, icons, and behavior without modifying the code.\n\nPart of the RossoForge package suite.",
-  "unity": "2022.0",
+  "unity": "2026.0",
   "author": {
     "name": "Agustin Rosso",
     "url": "https://www.linkedin.com/in/rossoagustin/"
@@ -20,11 +20,6 @@
       "displayName": "Load & Play",
       "description": "Configuration sample for 'Load & Play', open the indicated scene and plays Unity editor",
       "path": "Samples~/LoadAndPlay"
-    },
-    {
-      "displayName": "Custom button Callback",
-      "description": "Button callback script that allows you to add custom functionality to the button click",
-      "path": "Samples~/CustomCallback"
     }
   ]
 }
