@@ -2,7 +2,7 @@ using System;
 using UnityEditor;
 using UnityEngine;
 
-namespace Rossoforge.Toolbar.Editor.Windows
+namespace Rossoforge.Toolbar.Windows
 {
     public class IconSelectorWindows : EditorWindow
     {

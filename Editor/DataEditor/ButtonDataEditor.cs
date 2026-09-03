@@ -1,10 +1,10 @@
-using Rossoforge.Toolbar.Editor.Callbacks;
+using Rossoforge.Toolbar.Callbacks;
 using System;
 using UnityEngine;
 
-namespace Rossoforge.Toolbar.Editor.Profiles.Buttons
+namespace Rossoforge.Toolbar.DataEditor
 {
-    public abstract class ButtonProfile : ScriptableObject
+    public abstract class ButtonDataEditor : ScriptableObject
     {
         [SerializeReference]
         private ButtonCallback[] _buttonCallbacks;

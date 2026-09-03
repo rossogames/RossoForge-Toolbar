@@ -2,7 +2,7 @@
 using System.ComponentModel;
 using UnityEditor;
 
-namespace Rossoforge.Toolbar.Editor.Callbacks
+namespace Rossoforge.Toolbar.Callbacks
 {
     [Serializable]
     [Description("Play Current Scene")]
