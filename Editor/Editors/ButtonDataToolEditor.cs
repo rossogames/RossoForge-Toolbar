@@ -9,7 +9,7 @@ using UnityEngine;
 
 namespace Rossoforge.Toolbar.Editors
 {
-    public abstract class ButtonProfileEditor : UnityEditor.Editor
+    public abstract class ButtonDataToolEditor : Editor
     {
         protected static List<ButtonCallbackInfo> _buttonCallbackInfo;
 

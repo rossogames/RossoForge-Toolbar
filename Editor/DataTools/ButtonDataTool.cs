@@ -2,9 +2,9 @@ using Rossoforge.Toolbar.Callbacks;
 using System;
 using UnityEngine;
 
-namespace Rossoforge.Toolbar.DataEditor
+namespace Rossoforge.Toolbar.DataTool
 {
-    public abstract class ButtonDataEditor : ScriptableObject
+    public abstract class ButtonDataTool : ScriptableObject
     {
         [SerializeReference]
         private ButtonCallback[] _buttonCallbacks;
