@@ -1,10 +1,11 @@
-using Rossoforge.Toolbar.Editor.Profiles.Buttons;
+#if UNITY_EDITOR
+using Rossoforge.Toolbar.DataTool;
 using UnityEditor.Toolbars;
 using UnityEngine;
 
 public static class CustomToolbarDrawer
 {
-    public static IconButtonProfile _bootAndPlayButton = Resources.Load<IconButtonProfile>("Boot&Play");
+    public static IconButtonDataTool _bootAndPlayButton = Resources.Load<IconButtonDataTool>("Boot&Play");
 
     [MainToolbarElement("Custom Toolbar/Boot & Play", defaultDockPosition = MainToolbarDockPosition.Middle)]
     static MainToolbarElement LoadBootAndPlayButtonToolbar()
@@ -12,3 +13,4 @@ public static class CustomToolbarDrawer
         return _bootAndPlayButton.GetToolBarButton();
     }
 }
+#endif
