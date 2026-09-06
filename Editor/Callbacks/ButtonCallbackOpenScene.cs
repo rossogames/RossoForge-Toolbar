@@ -3,7 +3,7 @@ using System.ComponentModel;
 using UnityEditor;
 using UnityEditor.SceneManagement;
 
-namespace Rossoforge.Toolbar.Editor.Callbacks
+namespace Rossoforge.Toolbar.Callbacks
 {
     [Serializable]
     [Description("Open Scene")]

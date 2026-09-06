@@ -1,15 +1,15 @@
-using Rossoforge.Toolbar.Editor.Profiles.Buttons;
-using Rossoforge.Toolbar.Editor.Windows;
+using Rossoforge.Toolbar.DataTool;
+using Rossoforge.Toolbar.Windows;
 using UnityEditor;
 using UnityEngine;
 
-namespace Rossoforge.Toolbar.Editor.Editors
+namespace Rossoforge.Toolbar.Editors
 {
 
-    [CustomEditor(typeof(IconButtonProfile))]
-    public class IconButtonProfileEditor : ButtonProfileEditor
+    [CustomEditor(typeof(IconButtonDataTool))]
+    public class IconButtonDataToolEditor : ButtonDataToolEditor
     {
-        protected IconButtonProfile _targetData;
+        protected IconButtonDataTool _targetData;
         private SerializedProperty _toolTipProp;
 
         private GUIContent _selectIconButtonContent;
@@ -18,7 +18,7 @@ namespace Rossoforge.Toolbar.Editor.Editors
         {
             base.OnEnable();
 
-            _targetData = (IconButtonProfile)target;
+            _targetData = (IconButtonDataTool)target;
             _toolTipProp = serializedObject.FindProperty("_toolTip");
 
             _selectIconButtonContent = EditorGUIUtility.IconContent("Search Icon");

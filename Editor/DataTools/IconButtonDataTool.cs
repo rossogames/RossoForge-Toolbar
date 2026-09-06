@@ -2,10 +2,10 @@
 using UnityEditor.Toolbars;
 using UnityEngine;
 
-namespace Rossoforge.Toolbar.Editor.Profiles.Buttons
+namespace Rossoforge.Toolbar.DataTool
 {
-    [CreateAssetMenu(fileName = nameof(IconButtonProfile), menuName = "Rossoforge/Toolbar/Buttons/Icon Button")]
-    public class IconButtonProfile : ButtonProfile
+    [CreateAssetMenu(fileName = nameof(IconButtonDataTool), menuName = "Rossoforge/Data Tools/Toolbar/Icon Button")]
+    public class IconButtonDataTool : ButtonDataTool
     {
         [SerializeField]
         public string _toolTip;
